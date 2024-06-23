@@ -1,0 +1,77 @@
+<!-- views/books/new.ejs -->
+
+<!--
+  사용자 생성 구축
+-->
+
+<main class="">
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="pt-5">
+      <h1>Add New Book</h1>
+      <p>What book would you like to add today?</p>
+
+      <div class="row">
+        <div class="col-lg-6 mb-3 mt-3">
+          <div class="data-form">
+            <form class="form-signin" action="/books/create" method="POST">
+              <h2 class="form-signin-heading">Create a new book:</h2>
+
+              <label for="inputBookname">Book Name</label>
+              <input
+                type="text"
+                name="bookname"
+                id="inputBookname"
+                class="form-control"
+                placeholder="Book Name"
+                required
+                autofocus
+              >
+
+              <label for="inputAuthor">Author</label>
+              <input
+                type="text"
+                name="author"
+                id="inputAuthor"
+                class="form-control"
+                placeholder="Author"
+                required
+              >
+
+              <label for="inputPublisher">Publisher</label>
+              <input
+                type="text"
+                name="publisher"
+                id="inputPublisher"
+                class="form-control"
+                placeholder="Publisher"
+                required
+              >
+
+              <label for="inputLocation">Location</label>
+              <input
+                type="text"
+                name="location"
+                id="inputLocation"
+                class="form-control"
+                placeholder="Location"
+                required
+              >
+
+              <br />
+              <button class="btn btn-lg ut-red" type="submit">Create Book</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-start mb-3 mt-5">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2018/03/01/07/22/education-3189934_960_720.jpg"
+              alt="Book Image"
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

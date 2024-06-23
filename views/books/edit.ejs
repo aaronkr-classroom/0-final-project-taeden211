@@ -1,0 +1,53 @@
+<div class="data-form">
+  <form class="form-signin" action="<%=`/books/${book._id}/update?_method=PUT`%>" method="POST">
+    <h2 class="form-signin-heading">Edit Book:</h2>
+
+    <label for="inputBookname">Book Name</label>
+    <input
+      type="text"
+      name="bookname"
+      id="inputBookname"
+      class="form-control"
+      value="<%= book.bookname %>"
+      placeholder="Book Name"
+      required
+      autofocus
+    >
+
+    <label for="inputAuthor">Author</label>
+    <input
+      type="text"
+      name="author"
+      id="inputAuthor"
+      class="form-control"
+      value="<%= book.author %>"
+      placeholder="Author"
+      required
+    >
+
+    <label for="inputPublisher">Publisher</label>
+    <input
+      type="text"
+      name="publisher"
+      id="inputPublisher"
+      class="form-control"
+      value="<%= book.publisher %>"
+      placeholder="Publisher"
+      required
+    >
+
+    <label for="inputLocation">Location</label>
+    <input
+      type="text"
+      name="location"
+      id="inputLocation"
+      class="form-control"
+      value="<%= book.location %>"
+      placeholder="Location"
+      required
+    >
+
+    <br />
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+  </form>
+</div>

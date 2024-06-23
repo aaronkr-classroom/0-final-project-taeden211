@@ -12,9 +12,15 @@
  * 불필요한 선택자를 삭제하고
  * 필요에 따라 추가 선택자를 추가하십시오. 
  */
-body {
+ body {
   margin: 0;
   padding: 0;
+}
+
+.user-info span {
+  position: relative;
+  top: 3px;
+  right: 3px;
 }
 
 .ut-red {
@@ -200,8 +206,8 @@ td {
 }
 
 .user-edit-form input {
-  background: transparent;
-  text-align: center;
+  /* background: transparent;
+  text-align: center; */
 }
 
 .user-edit-form tbody {
@@ -282,4 +288,18 @@ td {
 
 .img-404 img {
   max-height: 50vh;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-signin .logo {
+  margin: auto;
+  float: none;
 }

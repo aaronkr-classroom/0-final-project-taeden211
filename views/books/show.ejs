@@ -1,0 +1,32 @@
+<h1 class="center">Book Data for <%= book.bookname %></h1>
+
+<table class="table">
+  <tr>
+    <th>Book Name</th>
+    <td><%= book.bookname %></td>
+  </tr>
+  <tr>
+    <th>Author</th>
+    <td><%= book.author %></td>
+  </tr>
+  <tr>
+    <th>Publisher</th>
+    <td><%= book.publisher %></td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td><%= book.location %></td>
+  </tr>
+</table>
+
+<div>
+  <a class="button" href="<%=`/books/${book._id}/edit`%>">
+    Edit Book Details
+  </a>
+</div>
+<div>
+  <a class="button" href="<%= `/books/${book._id}/delete?_method=DELETE` %>" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
+</div>
+<div>
+  <a class="button" href="/books">View all books</a>
+</div>
